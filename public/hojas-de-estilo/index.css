@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.4em;
+}
+
+button {
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    padding: 8px 20px;
+    color: brown;
+    background-color: rgb(248, 240, 240);
+}
+
+button:hover {
+    background-color: rgba(58, 56, 56, 0.849);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: brown;
+    font-size: 2.8em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+header a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+header a:hover {
+    color: brown;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url('../imagenes/img-hero-mb.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#hero h1 {
+    font-family: cursive;
+    color: white;
+    padding: 0 8px 50px 8px;
+}
+
+#hero button {
+    margin-top: 50px;
+}
+
+#biografia {
+    background-color: rgb(245, 245, 245);
+}
+
+#biografia .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#biografia h2 {
+    font-family: cursive;
+}
+
+#biografia p {
+    padding-top: 50px;
+}
+
+#disenios-disponibles {
+    background-color: rgba(6,7,6,255);
+    color: white;
+    text-align: center;
+}
+
+#disenios-disponibles .container {
+    padding: 40px 16px;
+}
+
+#disenios-disponibles h2 {
+    font-family: cursive;
+    padding-bottom: 50px;
+    font-size: 2.4em;
+}
+
+#disenios-disponibles .carta {
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 50px;
+    margin: 35px 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+#disenios-disponibles p {
+    display: none;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, .5),
+            rgb(0, 0, 0, .5)), url('../imagenes/disenio-1.jpg');
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, .5),
+            rgb(0, 0, 0, .5)), url('../imagenes/disenio-2.jpg');
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, .5),
+            rgb(0, 0, 0, .5)), url('../imagenes/disenio-3.jpg');
+}
+
+#cotizacion-tattoo {
+    background-color: rgb(245, 245, 245);
+}
+
+#cotizacion-tattoo .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 12px 100px 12px;
+}
+
+#cotizacion-tattoo h2 {
+    text-align: center;
+    font-size: 9vw;
+}
+
+#cotizacion-tattoo h3 {
+    font-size: 2em;
+}
+
+#cotizacion-tattoo li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#trabajos {
+    background-color: rgb(245, 245, 245);
+}
+
+#trabajos .container {
+    padding: 45px 12px;
+}
+
+#trabajos .container-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(210px, 300px));
+    grid-template-rows: repeat(4, minmax(250px, 340px));
+    grid-gap: 20px;
+}
+
+#trabajos h2 {
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.cuadro {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cuadro:first-child {
+    background-image: url('../imagenes/tattoo-1.jpg');
+}
+
+.cuadro:nth-child(2) {
+    background-image: url('../imagenes/tattoo-2.jpg');
+}
+
+.cuadro:nth-child(3) {
+    background-image: url('../imagenes/tattoo-3.jpg');
+}
+
+.cuadro:nth-child(4) {
+    background-image: url('../imagenes/tattoo-4.jpg');
+}
+
+.cuadro:nth-child(5) {
+    background-image: url('../imagenes/tattoo-5.jpg');
+}
+
+.cuadro:nth-child(6) {
+    background-image: url('../imagenes/tattoo-6.jpg');
+}
+
+.cuadro:nth-child(7) {
+    background-image: url('../imagenes/tattoo-7.jpg');
+}
+
+.cuadro:nth-child(8) {
+    background-image: url('../imagenes/tattoo-8.jpg');
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+
+footer .container {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+
+    /* Modifica header */
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-left: 20px;
+    }
+
+    header .logo {
+        padding: 25px 30px;
+        font-size: 2em;
+    }
+
+    header a {
+        margin-right: 5px;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+
+    #hero {
+        height: 100vh;
+        background-image: linear-gradient(0deg,
+                rgb(0, 0, 0, 0.5),
+                rgb(0, 0, 0, 0.5)), url('../imagenes/img-hero.jpg');
+        background-position: center center;
+    }
+
+    #hero h1 {
+        font-size: 6em;
+    }
+
+    #hero button {
+        font-size: 2.8em;
+        padding: 15px 20px;
+        margin-top: 120px;
+    }
+
+    #biografia {
+        height: 100vh;
+    }
+
+    #biografia .container {
+        text-align: center;
+        padding: 200px 12px;
+    }
+
+    #biografia h2 {
+        font-size: 4.5em;
+    }
+
+    #biografia p {
+        font-size: 2.3em;
+        padding: 60px;
+    }
+
+    #disenios-disponibles .container {
+        padding: 75px 18px;
+    }
+
+    #disenios-disponibles .disenios {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #disenios-disponibles h2 {
+        font-family: cursive;
+        font-size: 3.8em;
+    }
+
+    #disenios-disponibles .carta{
+        padding: 20px 50px;
+        background-size: 100% 300px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        box-shadow: 2px 2px 10px rgba(255, 252, 252, 0.5);
+    }
+
+    #disenios-disponibles h3 {
+        padding-bottom: 100px;
+        font-size: 1.5em;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #disenios-disponibles p {
+        display: block;
+        padding-top: 120px;
+        color: rgb(245, 245, 245,);
+    }
+
+    #cotizacion-tattoo {
+        height: 85vh;
+    }
+
+    #cotizacion-tattoo .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #cotizacion-tattoo .texto {
+        width: 50%;
+        width: 500px;
+    }
+
+    #cotizacion-tattoo h2 {
+        margin-top: 0;
+        font-size: 4.3em;
+    }
+
+    #cotizacion-tattoo h3 {
+        font-size: 2.5em;
+    }
+
+    #cotizacion-tattoo li {
+        margin: 0px;
+    }
+
+    #cotizacion-tattoo .img-container {
+        margin-top: 70px;
+        background-image: url('../imagenes/fondo-1.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 620px;
+        width: 500px;
+    }
+
+    #trabajos h2 {
+        font-size: 4.5em;
+    }
+
+    #trabajos .container-grid {
+        grid-template-columns: repeat(4, minmax(210px, 360px));
+        grid-template-rows: repeat(2, minmax(300px, 520px));
+        grid-gap: 20px;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+
+    footer p {
+        font-size: 2em;
+    }
+}
