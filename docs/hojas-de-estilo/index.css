@@ -133,7 +133,7 @@ header a:hover {
 }
 
 #disenios-disponibles {
-    background-color: rgba(6,7,6,255);
+    background-color: rgba(6, 7, 6, 255);
     color: white;
     text-align: center;
 }
@@ -365,7 +365,7 @@ footer .container {
         font-size: 3.8em;
     }
 
-    #disenios-disponibles .carta{
+    #disenios-disponibles .carta {
         padding: 20px 50px;
         background-size: 100% 300px;
         background-repeat: no-repeat;
@@ -382,7 +382,7 @@ footer .container {
     #disenios-disponibles p {
         display: block;
         padding-top: 120px;
-        color: rgb(245, 245, 245,);
+        color: rgb(245, 245, 245, );
     }
 
     #cotizacion-tattoo {
@@ -424,6 +424,11 @@ footer .container {
 
     #trabajos h2 {
         font-size: 4.5em;
+        margin-top: 3em;
+    }
+
+    #trabajos {
+        margin-top: 0em;
     }
 
     #trabajos .container-grid {
